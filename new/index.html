@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+	<!-- Boilerplate code -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="favicon.ico" rel="icon" type="image/x-icon" />
+	<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!-- Grab Google CDN's jQuery. fall back to local if necessary -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script>!window.jQuery && document.write('<script src="js\/jquery.js"><\/script>')</script>
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<!--[if lt IE 7 ]> <body class="ie6"> <![endif]-->
+	<!--[if IE 7 ]>    <body class="ie7"> <![endif]-->
+	<!--[if IE 8 ]>    <body class="ie8"> <![endif]-->
+	<!--[if IE 9 ]>    <body class="ie9"> <![endif]-->
+	<!--[if (gt IE 9)|!(IE)]><!-->  <!--<![endif]-->
+
+	<!-- Begin HTML5 Structural Tags in IE6. -->
+	<script type="text/javascript">
+		document.createElement('header');
+		document.createElement('footer');
+		document.createElement('section');
+		document.createElement('aside');
+		document.createElement('nav');
+		document.createElement('article');
+		document.createElement('canvas');
+	</script>
+	<!-- End HTML5 Structural Tags in IE6 -->
+
+    <!-- Page Title and CSS -->
+    <title>The Electric Beach Tanning Salon</title>
+    <link rel="stylesheet" type="text/css" href="css/beach.css" />
+    <!-- End Page Title and CSS -->
+
+    <!-- Begin Slideshow -->
+	<link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+	<script type="text/javascript" src="js/slides.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#slides').slides({
+				preload: true,
+				preloadImage: 'images/lightbox/loading.gif',
+				play: 4000,
+				pause: 2500,
+				hoverPause: false,
+				animationStart: function(current){
+					$('.caption').animate({
+						bottom:-35
+					},100);
+				},
+				animationComplete: function(current){
+					$('.caption').animate({
+						bottom:0
+					},200);
+				},
+				slidesLoaded: function() {
+					$('.caption').animate({
+						bottom:0
+					},200);
+				}
+			});
+		});
+	</script>
+	<!-- End Slideshow -->
+
+	<!-- Begin Lightbox stuff -->
+	<script type="text/javascript" src="js/lightbox.js"></script>
+	<link type="text/css" href="css/lightbox.css" rel="stylesheet" />
+	<!-- End Lightbox stuff -->
+
+</head>
+
+<body>
+	<div class="container">
+
+        <header>
+            <h1>Electric Beach Tanning</h1>
+            <h2>Bringing Sunshine to Cleveland Since 1986!!</h2>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="salons.html" target="_self">Locations &amp; Hours</a></li>
+                <li><a href="products.html" target="_self">Products &amp; Promotions</a></li>
+                <li><a href="packages.html" target="_self">Tanning Packages</a></li>
+                <li><a href="benefits.html" target="_self">Benefits of Tanning</a></li>
+            </ul>
+        </nav>
+
+        <section id="slideshow">
+            <div id="certified"><h2>State Board of Ohio Certified &amp; SAE Trained Staff</h2></div>
+
+            <div id="slides">
+                <div class="slides_container">
+                    <div class="slide">
+                        <img src="images/slides/salon1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slides/lotions1.jpg" width=800" height="auto" alt="Electric Beach Tanning Salon">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slides/lotions2.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                    </div>
+                    <div class="slide">
+                        <img src="images/slides/lotions3.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                    </div>
+                </div>
+            </div>
+
+            <div id="clickFor">
+                <h1><a href="salons.html">Click Here for Hours &amp; Locations!</a></h1>
+            </div>
+        </section>
+
+        <footer>
+			<h2>I am a footer.</h2>
+		</footer>
+	</div>
+</body>
+</html>

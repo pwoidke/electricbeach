@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	background: #ffaa33 url('../images/background.png') repeat-x;
+	margin: 0px;
+	padding: 0px;
+	font-family:"Arial Black", Gadget, sans-serif;
+	text-align: center;
+	color: #FF0;
+}
+
+.container{
+	display:block;
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align: left;
+}
+
+/* Layout */
+header{
+	display:block;
+	height: 80px;
+	width:100%;
+	margin-top:20px;
+    background-color:rgba(102,51,0,0.0);
+	border-radius:30px;
+    text-align: right;
+}
+
+section{
+	display: block;
+	width:100%;
+	height: auto;
+	background-color:#630;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+article{
+	margin:20px;
+	clear:both;
+}
+
+footer{
+	display:block;
+	width:100%;
+	height: 50px;
+    background-color:rgba(102,51,0,0.8);
+    clear: both;
+	min-height:30px;
+	text-align:center;
+	color:white;
+    margin-top: 10px;
+	border-top-left-radius:20px;
+	border-top-right-radius:20px;
+    padding-top: 20px;
+}
+
+/* Navigation */
+nav{
+	width:100%;
+    text-align: center;
+    clear: both;
+    margin-bottom: 10px;
+    position: relative;
+    top:40px;
+}
+
+nav ul li {
+    display: inline-block;
+    text-align: center;
+    width: 240px;
+    border-radius: 20px;
+    background-color: #630;
+    height: 50px;
+    padding-top: 20px;
+}
+
+nav ul li a {
+    color:white;
+    text-decoration: none;
+    font-size: large;
+}
+
+/* Text */
+p{
+    color: white;
+}
+
+h1{
+    color: yellow;
+    font-size: xx-large;
+}
+
+h2{
+    color: yellow;
+    font-size: large;
+}
+
+header h1, header h2{
+    margin-right: 200px;
+}
+
+h1 a{
+    text-decoration: none;
+    color: yellow;
+}
+
+/* Homepage */
+#certified {
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#clickFor {
+    text-align: center;
+    clear: both;
+}
+
+.container #slideshow {
+    text-align: center;
+}
