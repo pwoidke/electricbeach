@@ -70,6 +70,32 @@
 	<link type="text/css" href="css/lightbox.css" rel="stylesheet" />
 	<!-- End Lightbox stuff -->
 
+    <!-- Navigation docking -->
+    <script type="text/javascript">
+        var fixed = false;
+
+        $(document).scroll(function() {
+            if( $(this).scrollTop() >= ($('header').height()+10) ) {
+                if( !fixed ) {
+                    fixed = true;
+                    $('nav').css({position:'fixed',top:10}); // Or set top:20px; in CSS
+                    $('nav ul li').css({'border-bottom-left-radius':'20px','border-bottom-right-radius':'20px'});
+                    $('section').css({position:'relative',top:50});
+                    $('footer').css({position:'relative',top:50});
+                }
+            }
+            else {
+                if( fixed ) {
+                    fixed = false;
+                    $('nav').css({position:'static'});
+                    $('nav ul li').css({'border-bottom-left-radius':'0px','border-bottom-right-radius':'0px'});
+                    $('section').css({position:'static'});
+                    $('footer').css({position:'static'});
+                }
+            }
+        });
+    </script>
+    <!-- End Navigation docking-->
 </head>
 
 <body>
@@ -98,7 +124,7 @@
                         <img src="images/slides/salon1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
                     </div>
                     <div class="slide">
-                        <img src="images/slides/lotions1.jpg" width=800" height="auto" alt="Electric Beach Tanning Salon">
+                        <img src="images/slides/lotions1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
                     </div>
                     <div class="slide">
                         <img src="images/slides/lotions2.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
