@@ -70,16 +70,24 @@
 	<link type="text/css" href="css/lightbox.css" rel="stylesheet" />
 	<!-- End Lightbox stuff -->
 
+    <!-- Full size background image -->
+    <script type="text/javascript" src="js/fullbg.js"></script>
+    <script type="text/javascript">
+        $(window).load(function() {
+            $("#background").show();
+            $("#background").fullBg();
+        });
+    </script>
+    <!-- End full size background image -->
+
     <!-- Navigation docking -->
     <script type="text/javascript">
         var fixed = false;
-
         $(document).scroll(function() {
             if( $(this).scrollTop() >= ($('header').height()+10) ) {
                 if( !fixed ) {
                     fixed = true;
                     $('nav').css({position:'fixed',top:10}); // Or set top:20px; in CSS
-                    $('nav ul li').css({'border-bottom-left-radius':'20px','border-bottom-right-radius':'20px'});
                     $('section').css({position:'relative',top:50});
                     $('footer').css({position:'relative',top:50});
                 }
@@ -88,7 +96,6 @@
                 if( fixed ) {
                     fixed = false;
                     $('nav').css({position:'static'});
-                    $('nav ul li').css({'border-bottom-left-radius':'0px','border-bottom-right-radius':'0px'});
                     $('section').css({position:'static'});
                     $('footer').css({position:'static'});
                 }
@@ -99,50 +106,54 @@
 </head>
 
 <body>
-	<div class="container">
+    <img src="images/slides/salon1.jpg" alt="" id="background" />
+    <div id="maincontent">
+        <div class="container">
 
-        <header>
-            <h1>Electric Beach Tanning</h1>
-            <h2>Bringing Sunshine to Cleveland Since 1986!!</h2>
-        </header>
+            <header>
+                <h1>Electric Beach Tanning</h1>
+                <h2>Bringing Sunshine to Cleveland Since 1986!!</h2>
+            </header>
 
-        <nav>
-            <ul>
-                <li><a href="salons.html" target="_self">Locations &amp; Hours</a></li>
-                <li><a href="products.html" target="_self">Products &amp; Promotions</a></li>
-                <li><a href="packages.html" target="_self">Tanning Packages</a></li>
-                <li><a href="benefits.html" target="_self">Benefits of Tanning</a></li>
-            </ul>
-        </nav>
+            <nav>
+                <ul>
+                    <li><a href="salons.html" target="_self">Locations &amp; Hours</a></li>
+                    <li><a href="products.html" target="_self">Products &amp; Promotions</a></li>
+                    <li><a href="packages.html" target="_self">Tanning Packages</a></li>
+                    <li><a href="benefits.html" target="_self">Benefits of Tanning</a></li>
+                </ul>
+            </nav>
 
-        <section id="slideshow">
-            <div id="certified"><h2>State Board of Ohio Certified &amp; SAE Trained Staff</h2></div>
+           <section id="slideshow">
+                <div id="certified"><h2>State Board of Ohio Certified &amp; SAE Trained Staff</h2></div>
 
-            <div id="slides">
-                <div class="slides_container">
-                    <div class="slide">
-                        <img src="images/slides/salon1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
-                    </div>
-                    <div class="slide">
-                        <img src="images/slides/lotions1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
-                    </div>
-                    <div class="slide">
-                        <img src="images/slides/lotions2.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
-                    </div>
-                    <div class="slide">
-                        <img src="images/slides/lotions3.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                <div id="slides">
+                    <div class="slides_container">
+                        <div class="slide">
+                            <img src="images/slides/salon1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slides/lotions1.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slides/lotions2.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                        </div>
+                        <div class="slide">
+                            <img src="images/slides/lotions3.jpg" width="800" height="auto" alt="Electric Beach Tanning Salon">
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="clickFor">
-                <h1><a href="salons.html">Click Here for Hours &amp; Locations!</a></h1>
-            </div>
-        </section>
+                <div id="clickFor">
+                    <h1><a href="salons.html">Click Here for Hours &amp; Locations!</a></h1>
+                </div>
+            </section>
 
-        <footer>
-			<h2>I am a footer.</h2>
-		</footer>
-	</div>
+            <footer>
+                <h2>I am a footer.</h2>
+            </footer>
+
+        </div>
+    </div>
 </body>
 </html>
