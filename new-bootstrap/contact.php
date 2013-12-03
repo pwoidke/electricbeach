@@ -77,19 +77,47 @@
       <div class="row">
       
         <div class="col-lg-12">
-          <h1 class="page-header">Contact <small>We'd Love to Hear From You!</small></h1>
+          <h1 class="page-header">Locations &amp; Hours <small>We'd Love to Hear From You!</small></h1>
           <ol class="breadcrumb">
             <li><a href="index.html">Home</a></li>
             <li class="active">Contact</li>
           </ol>
         </div>
-        
+
+      </div><!-- /.row -->
+
+
+
+      <div class="row">
+          <div class="col-lg-4 col-md-4">
+              <h3><i class="fa fa-map-marker"></i> Cleveland</h3>
+              <p>17480 Lorain Rd. (in Kamm's Plaza)<br/>
+                 Cleveland, OH 44111<br/>
+                 (216) 671-9955</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+              <h3><i class="fa fa-map-marker"></i> Fairview Park</h3>
+              <p>22550 Lorain Rd. (across from McDonalds)<br/>
+                 Fairview Park, OH 44126<br/>
+                 (440) 716-0937</p>
+          </div>
+          <div class="col-lg-4 col-md-4">
+              <h3><i class="fa fa-map-marker"></i> Westlake</h3>
+              <p>28719 Center Ridge Rd.
+                 Kensington Square (across from Schwartz Rd)<br/>
+                 Westlake, OH 44145<br/>
+                 (440) 835-8799</p>
+          </div>
+      </div><!-- /.row -->
+
+
+      <div class="row">
         <div class="col-lg-12">
           <!-- Embedded Google Map using an iframe - to select your location find it on Google maps and paste the link as the iframe src. If you want to use the Google Maps API instead then have at it! -->
           <iframe width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed"></iframe>
         </div>
-
       </div><!-- /.row -->
+
       
       <div class="row">
 
