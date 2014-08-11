@@ -1,0 +1,9 @@
+Update colors, fonts, etc.
+Add new images
+Add team images
+—Update locations & hours
+Update social media links
+Verify packages and pricing
+—Remove "Portfolio" pages
+—Align header and footer across all pages (maybe use Handlebars templates or something)
+Set up contact form email
