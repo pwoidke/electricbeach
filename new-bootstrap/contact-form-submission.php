@@ -43,7 +43,7 @@ $email_content .= "Message:\n\n$message";
 	
 // send the email
 //ENTER YOUR INFORMATION BELOW FOR THE FORM TO WORK!
-mail ('shades.zilla@gmail.com', 'Electric Beach Tanning - Contact Form Submission', $email_content, $headers);
+mail ('paulwoidke@gmail.com', 'Electric Beach Tanning - Contact Form Submission', $email_content, $headers);
 	
 // send the user back to the form
 header('Location: contact.html?s='.urlencode('Thank you for your message.')); exit;
