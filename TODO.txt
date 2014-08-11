@@ -7,3 +7,7 @@ Verify packages and pricing
 —Remove "Portfolio" pages
 —Align header and footer across all pages (maybe use Handlebars templates or something)
 Set up contact form email
+
+Get photos of beds (Classic, VHR, Red Light)
+Update homepage copy
+FAQ Page
